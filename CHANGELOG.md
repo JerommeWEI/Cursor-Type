@@ -2,6 +2,13 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [1.3.0] - 2026-10-21
+
+### 变更
+
+- 主箭头改为**矢量描摹重建**（vtracer 描摹 + resvg 渲染），青/黑两色版均从矢量源生成，各尺寸边缘完美抗锯齿
+- 矢量源文件收录于 `cursors/kimi_arrow.svg`
+
 ## [1.2.0] - 2026-10-21
 
 ### 变更
@@ -59,6 +66,7 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[1.3.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.3.0
 [1.2.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.2.0
 [1.1.5]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.5
 [1.1.4]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.4
