@@ -2,6 +2,13 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [1.1.2] - 2026-10-21
+
+### 修正
+
+- 换色算法改为按亮度在青色与白色间平滑渐变，消除青色填充与白色描边之间的灰色过渡带（锯齿感）
+- 附带效果：No / Pin / Person 等光标的彩色徽章恢复原版颜色
+
 ## [1.1.1] - 2026-10-21
 
 ### 修正
@@ -26,6 +33,7 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[1.1.2]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.2
 [1.1.1]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.1
 [1.1.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.0
 [1.0.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.0.0
