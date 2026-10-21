@@ -59,9 +59,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\uninstall.ps1
 
 ```
 cursors/
-├── kimi_arrow_black.cur   # 主光标：Kimi 箭头（黑色）
-├── kimi_arrow.cur         # 主光标备用：Kimi 箭头（蓝色）
-└── bibata/                # Bibata Modern Classic Regular 全套（.cur + .ani）
+├── kimi_arrow_teal.cur    # 主光标：Kimi 箭头（青碧色，当前默认）
+├── kimi_arrow_black.cur   # 主光标备选：Kimi 箭头（黑色）
+├── kimi_arrow.cur         # 主光标备选：Kimi 箭头（蓝色，原版）
+├── kimi_arrow.svg         # 主箭头矢量源（改色 / 二次创作用）
+└── bibata/                # Bibata Modern Classic 全套（.cur + .ani，矢量管线渲染）
 docs/previews/             # README 预览图（由 make_previews.py 生成）
 install.ps1                # 一键安装
 uninstall.ps1              # 还原默认
@@ -70,7 +72,7 @@ make_previews.py           # 从 .cur/.ani 提取预览图
 
 ## 版本
 
-当前版本：**v1.3.0**（见 [CHANGELOG](CHANGELOG.md) 与 Releases）
+当前版本：**v2.0.0**（见 [CHANGELOG](CHANGELOG.md) 与 Releases）
 
 ## 致谢与许可
 

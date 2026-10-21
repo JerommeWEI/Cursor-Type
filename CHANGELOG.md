@@ -2,6 +2,15 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [2.0.0] - 2026-10-21
+
+首个正式版（Official Release）。整套光标全部来自矢量渲染：
+
+- 主箭头：Kimi 箭头矢量描摹源（`kimi_arrow.svg`）+ resvg 渲染，青碧 `#14B8A6` 默认，黑 / 蓝备选
+- 配套光标：Bibata Modern Classic 全套染为青碧色，彩色徽章保留原色
+- 忙碌 / 后台忙碌动画：从官方 SVG 帧改色后逐帧矢量渲染，54 帧、帧率、热点与官方一致
+- 一键安装 / 还原脚本，免管理员权限，立即生效
+
 ## [1.3.0] - 2026-10-21
 
 ### 变更
@@ -66,6 +75,7 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[2.0.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v2.0.0
 [1.3.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.3.0
 [1.2.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.2.0
 [1.1.5]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.5
