@@ -2,6 +2,12 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [1.1.1] - 2026-10-21
+
+### 修正
+
+- 忙碌（Busy）/ 后台忙碌（Working）动画：彩色旋转扇区恢复为原版彩色，仅黑色部分（外圈、箭头）染为青碧色
+
 ## [1.1.0] - 2026-10-21
 
 ### 变更
@@ -20,5 +26,6 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[1.1.1]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.1
 [1.1.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.0
 [1.0.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.0.0
