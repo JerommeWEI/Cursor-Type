@@ -2,6 +2,12 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [1.1.3] - 2026-10-21
+
+### 修正
+
+- 三个主箭头（青/黑/蓝）从 Kimi 原始资源用平滑渐变算法重建，消除边缘灰色过渡带；青色箭头填充保留轻微明暗渐变
+
 ## [1.1.2] - 2026-10-21
 
 ### 修正
@@ -33,6 +39,7 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[1.1.3]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.3
 [1.1.2]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.2
 [1.1.1]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.1
 [1.1.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.0
