@@ -2,6 +2,13 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [2.1.0] - 2026-10-21
+
+### 新增
+
+- `install-autostart.ps1` / `uninstall-autostart.ps1`：登录时自动重应用主题的计划任务，防止系统更新/主题同步重置光标配置
+- README 补充覆盖范围说明（系统方案光标 vs 应用自带光标）
+
 ## [2.0.0] - 2026-10-21
 
 首个正式版（Official Release）。整套光标全部来自矢量渲染：
@@ -75,6 +82,7 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[2.1.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v2.1.0
 [2.0.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v2.0.0
 [1.3.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.3.0
 [1.2.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.2.0

@@ -38,6 +38,20 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 2. 写入 `HKCU\Control Panel\Cursors` 的全部 17 个角色
 3. 调用 `SystemParametersInfo(SPI_SETCURSORS)` 让新光标**立即生效**，无需重启
 
+## 开机自动应用（可选）
+
+Windows 更新或主题同步有时会把指针配置重置回默认。运行一次：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install-autostart.ps1
+```
+
+即可注册登录计划任务 `CursorType-Apply`，每次登录自动重应用本主题。移除用 `uninstall-autostart.ps1`。
+
+## 覆盖范围说明
+
+本主题覆盖 Windows 系统方案的全部 17 个指针角色。凡是使用系统标准光标的应用（资源管理器、绝大多数桌面软件、浏览器中的标准指针/手型/I 型等）都会自动跟随本主题。少数第三方软件（游戏、部分专业软件）打包并加载自己的光标文件，这类场景不受任何系统主题控制，需要按软件单独处理。
+
 ## 卸载 / 还原
 
 ```powershell
@@ -67,12 +81,14 @@ cursors/
 docs/previews/             # README 预览图（由 make_previews.py 生成）
 install.ps1                # 一键安装
 uninstall.ps1              # 还原默认
+install-autostart.ps1      # 注册登录自动应用任务（可选）
+uninstall-autostart.ps1    # 移除自动应用任务
 make_previews.py           # 从 .cur/.ani 提取预览图
 ```
 
 ## 版本
 
-当前版本：**v2.0.0**（见 [CHANGELOG](CHANGELOG.md) 与 Releases）
+当前版本：**v2.1.0**（见 [CHANGELOG](CHANGELOG.md) 与 Releases）
 
 ## 致谢与许可
 
