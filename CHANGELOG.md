@@ -2,6 +2,12 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [1.1.4] - 2026-10-21
+
+### 修正
+
+- 忙碌 / 后台忙碌动画改为软过渡混色：按饱和度与亮度连续加权，消除青色圆环与彩色扇区之间的生硬暗边
+
 ## [1.1.3] - 2026-10-21
 
 ### 修正
@@ -39,6 +45,7 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[1.1.4]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.4
 [1.1.3]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.3
 [1.1.2]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.2
 [1.1.1]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.1

@@ -70,7 +70,7 @@ make_previews.py           # 从 .cur/.ani 提取预览图
 
 ## 版本
 
-当前版本：**v1.1.3**（见 [CHANGELOG](CHANGELOG.md) 与 Releases）
+当前版本：**v1.1.4**（见 [CHANGELOG](CHANGELOG.md) 与 Releases）
 
 ## 致谢与许可
 
