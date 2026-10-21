@@ -2,6 +2,13 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [1.2.0] - 2026-10-21
+
+### 变更
+
+- 忙碌 / 后台忙碌动画改为**矢量管线**：从 Bibata 官方 SVG 源文件改色（占位符替换），用 resvg 按 14 个尺寸逐帧重新渲染，矢量级抗锯齿
+- 动画帧热点（hotspot）与原动画参数（54 帧、帧率）保持与官方一致
+
 ## [1.1.5] - 2026-10-21
 
 ### 变更
@@ -52,6 +59,7 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[1.2.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.2.0
 [1.1.5]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.5
 [1.1.4]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.4
 [1.1.3]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.3
