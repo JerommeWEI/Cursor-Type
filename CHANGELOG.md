@@ -2,6 +2,14 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [1.1.0] - 2026-10-21
+
+### 变更
+
+- 主光标颜色：黑色 → 青碧色 `#14B8A6`（`kimi_arrow_teal.cur`）
+- 全套 Bibata 配套光标（14 个 .cur + 2 个 .ani 全部帧）同步染为青碧色，白色描边保留，忙碌/后台忙碌动画明暗对比保留
+- README 预览图全部更新为青色版本
+
 ## [1.0.0] - 2026-10-20
 
 ### 新增
@@ -12,4 +20,5 @@
 - `uninstall.ps1` 一键还原 Windows 默认方案
 - README 光标形态预览图（`make_previews.py` 自动生成）
 
+[1.1.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.1.0
 [1.0.0]: https://github.com/JerommeWEI/Cursor-Type/releases/tag/v1.0.0

@@ -1,4 +1,4 @@
-﻿# Cursor-Type 一键安装（无需管理员权限，只改当前用户 HKCU）
+# Cursor-Type 一键安装（无需管理员权限，只改当前用户 HKCU）
 # 用法：右键 install.ps1 -> 使用 PowerShell 运行；或
 #   powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 
@@ -7,12 +7,11 @@ $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $dst  = Join-Path $env:USERPROFILE "Cursors"
 
 New-Item -ItemType Directory -Force (Join-Path $dst "Bibata") | Out-Null
-Copy-Item (Join-Path $root "cursors\kimi_arrow_black.cur") $dst -Force
-Copy-Item (Join-Path $root "cursors\kimi_arrow.cur")       $dst -Force
+Copy-Item (Join-Path $root "cursors\kimi_arrow_*.cur")    $dst -Force
 Copy-Item (Join-Path $root "cursors\bibata\*")             (Join-Path $dst "Bibata") -Force
 
 $map = @{
-    Arrow       = "$dst\kimi_arrow_black.cur"
+    Arrow       = "$dst\kimi_arrow_teal.cur"
     AppStarting = "$dst\Bibata\Work.ani"
     Wait        = "$dst\Bibata\Busy.ani"
     Hand        = "$dst\Bibata\Link.cur"

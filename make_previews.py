@@ -52,7 +52,7 @@ def ani_first_frame_png(path):
 STAGING = r"E:\05-Ai Sand Box\Kimi\tools\staging\cursor_extract"
 
 jobs = {
-    "arrow-black": (STAGING + "/arrow_black.png", lambda p: open(p, "rb").read()),
+    "arrow-teal": (STAGING + "/../cursor_variants/variant_G.png", lambda p: open(p, "rb").read()),
     "arrow-blue": (STAGING + "/png_005.png", lambda p: open(p, "rb").read()),
     "busy": ("cursors/bibata/Busy.ani", ani_first_frame_png),
     "work": ("cursors/bibata/Work.ani", ani_first_frame_png),
@@ -78,7 +78,7 @@ for name, (rel, fn) in jobs.items():
     print("ok", name)
 
 # contact sheet: key shapes on light gray rounded cards
-sheet_items = ["arrow-black", "busy", "work", "hand", "text", "crosshair",
+sheet_items = ["arrow-teal", "busy", "work", "hand", "text", "crosshair",
                "help", "unavailable", "move", "resize-nwse", "pin", "person"]
 cols = 6
 cell = 160
