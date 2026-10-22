@@ -37,6 +37,13 @@ foreach ($k in $map.Keys) {
 }
 reg add "HKCU\Control Panel\Cursors" /v "Scheme Source" /t REG_DWORD /d 2 /f | Out-Null
 
+# 注册命名方案，让经典"鼠标属性 -> 指针"对话框的方案下拉框能按名字选到本主题
+#（现代"设置 -> 辅助功能"页的 4 个样式块为系统写死，任何自定义主题都无法出现在那里）
+$schemeOrder = "Arrow","Help","AppStarting","Wait","Crosshair","IBeam","NWPen","No","SizeNS","SizeWE","SizeNWSE","SizeNESW","SizeAll","UpArrow","Hand","Pin","Person"
+$schemePaths = ($schemeOrder | ForEach-Object { $map[$_] }) -join ","
+New-Item -Path "HKCU:\Control Panel\Cursors\Schemes" -Force | Out-Null
+reg add "HKCU\Control Panel\Cursors\Schemes" /v "Cursor-Type" /t REG_EXPAND_SZ /d $schemePaths /f | Out-Null
+
 Add-Type -ReferencedAssemblies System.Drawing 'using System; using System.Runtime.InteropServices; public class C { [DllImport("user32.dll")] public static extern bool SystemParametersInfo(int a, int b, IntPtr c, int d); }'
 [void][C]::SystemParametersInfo(0x0057, 0, [IntPtr]::Zero, 0)
 
