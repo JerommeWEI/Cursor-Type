@@ -1,6 +1,8 @@
 ﻿# Cursor-Type 卸载：恢复 Windows Black 系统方案光标
 #   powershell -NoProfile -ExecutionPolicy Bypass -File .\uninstall.ps1
 
+Unregister-ScheduledTask -TaskName "CursorType-EoaWatch" -Confirm:$false -ErrorAction SilentlyContinue
+
 $roles = "Arrow","Help","AppStarting","Wait","Crosshair","IBeam","NWPen","No","SizeNS","SizeWE","SizeNWSE","SizeNESW","SizeAll","UpArrow","Hand","Pin","Person"
 foreach ($k in $roles) {
     reg delete "HKCU\Control Panel\Cursors" /v $k /f 2>$null | Out-Null

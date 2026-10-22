@@ -2,4 +2,5 @@
 #   powershell -NoProfile -ExecutionPolicy Bypass -File .\uninstall-autostart.ps1
 
 Unregister-ScheduledTask -TaskName "CursorType-Apply" -Confirm:$false -ErrorAction SilentlyContinue
-Write-Host "已移除计划任务 CursorType-Apply" -ForegroundColor Green
+Unregister-ScheduledTask -TaskName "CursorType-EoaWatch" -Confirm:$false -ErrorAction SilentlyContinue
+Write-Host "已移除计划任务 CursorType-Apply / CursorType-EoaWatch" -ForegroundColor Green

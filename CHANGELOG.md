@@ -2,6 +2,20 @@
 
 本项目遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)。
 
+## [2.2.0] - 2026-10-22
+
+### 修复
+
+- **根因修复：辅助功能"鼠标指针大小"滑块顶掉主题**。拖滑块时 Windows 会用内置 aero 源重建 `%LocalAppData%\Microsoft\Windows\Cursors\*_eoa.cur`（17 个，内容与滑块值无关）并把方案重定向过去。现在：`cursors/eoa/` 内置主题版 eoa 光标（矢量渲染箭头 + Bibata 角色 + 动画代表帧，48–192 五档），安装时覆盖既有 eoa 文件；新增登录自启守护任务 `CursorType-EoaWatch`（`watch-eoa.ps1`），监听 eoa 目录并每 3 秒自检注册表，滑块重建后数秒内自动恢复主题，滑块调大小功能不受影响
+
+### 新增
+
+- `make_eoa.py`：从仓库光标源烘焙 17 个主题版 `*_eoa.cur`
+- `watch-eoa.ps1`：EoA 守护进程（eoa 文件监听 + 方案自检自愈）
+- `install.ps1`：自动安装 eoa payload、覆盖既有 eoa 文件、注册并启动守护任务
+- `uninstall.ps1` / `uninstall-autostart.ps1`：卸载时清理守护任务
+- 全部 ps1 脚本补 UTF-8 BOM，中文输出不再乱码
+
 ## [2.1.0] - 2026-10-21
 
 ### 新增
